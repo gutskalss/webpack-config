@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
+    <title>Frontend practice</title>
+  </head>
+  <body>
+    <div class="content">
+      <header class="header wrap">
+        <div class="header-logo">
+          <a href="index.html">
+            <img class="header-logo" src="./img/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <nav class="header-nav">
+          <ul class="header-menu">
+            <li class="header-menu-item">
+              <a href="#">Link 1</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#">Link 2</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#">Link 3</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main wrap">
+        <div class="main-content">
+          <h1>Webpack config preset</h1>
+          <div class="tabs js-tabs">
+            <button class="drop-down-btn">
+              Menu ⏷
+              <span class="line"></span>
+            </button>
+            <ul class="tab-header-wrap">
+              <li class="tab-header js-tab-header">Tab one</li>
+              <li class="tab-header js-tab-header">Empty tab</li>
+            </ul>
+            <ul class="tab-content-wrap">
+              <li class="tab-content js-tab-content">
+                <h2>Configuration</h2>
+                <ul>
+                  <li>
+                    Files and folders tree
+                    <ul>
+                      <li>
+                        `src/` source folder:
+                        <ul>
+                          <li>
+                            `src/index.html` - page content;
+                          </li>
+                          <li>
+                            `src/scss/` - styles source folder;
+                          </li>
+                          <li>
+                            `src/js/` - scripts source folder;
+                          </li>
+                          <li>
+                            `src/img/` - pictures folder
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        `dist/` build results folder:
+                        <ul>
+                          <li>
+                            `dist/index.html` - copying from `src/`;
+                          </li>
+                          <li>
+                            `dist/css/styles.css` - all styles minified
+                            (unminified in dev mode);
+                          </li>
+                          <li>
+                            `dist/css/styles.css.map` - sourcemap for styles
+                            file;
+                          </li>
+                          <li>
+                            `dist/js/scripts.js` - all scripts minified
+                            (excluded external libraries, unminified in dev
+                            mode);
+                          </li>
+                          <li>
+                            `dist/js/scripts.js.map` - sourcemap for scripts
+                            file;
+                          </li>
+                          <li>
+                            `dist/js/vendor.js` - all js libraries minified
+                            (unminified in dev mode)
+                          </li>
+                          <li>
+                            `dist/img/` - copying pictures from `src/img/`
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Is supported SCSS
+                  </li>
+                  <li>
+                    Is used babel with "'browserslist': '> 0.25%, not dead'"
+                    configuration. To modify, edit 'browserslist' value in
+                    'package.json'
+                  </li>
+                </ul>
+              </li>
+              <li class="tab-content js-tab-content">
+                <p>There's nothing here</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-sidebar hide-mobile">
+          <p>Sidebar</p>
+        </div>
+      </div>
+      <footer class="footer wrap">
+        <p class="footer-copyright">Copyright</p>
+      </footer>
+    </div>
+  </body>
+</html>
